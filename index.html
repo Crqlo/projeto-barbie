@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li> 
+                <li class="dropdown">
+                    <a href="servicos.html">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="consultoria.html">Consultoria</a></li>
+                        <li><a href="suporte.html">Suporte</a></li>
+                        <li><a href="desenvolvimento.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bem-vindo ao Incrível Mundo da Barbie</h1>
+        <p>Se você gosta de muito rosa e glitter você esta no lugar certo .</p>
+
+
+
+
+
+
+        <!-- passando as ftinhas pra ver de da certo -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="img/barbie-for-mac-desktop-wallpaper-preview.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="img/dg5rt90-6eb57340-b993-4261-86bd-8b297f38b3c9.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="img/medium-barbie-the-princess-the-popstar-hd-wallpaper-on-fine-art-original-imagbukky575fufa.webp" style="width:100%">
+            </div>
+        </div>
+
+        <p>Venha brilhar comigo no maravilhoso mundo da Barbie.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+
+
+
+    <!-- Teste pra ver se da certo JAVA -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); 
+        }
+    </script>
+</body>
+</html>
